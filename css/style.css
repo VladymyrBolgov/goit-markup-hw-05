@@ -126,9 +126,8 @@ img {
     color: var(--accent-color);
 }
 /* Иконки*/
-.icon-link{
-    width: 16px;
-    height: 12px;
+.icon-link-envelope,
+.icon-link-smartphone{
     fill: currentColor;
     margin-right: 10px;
    /* color: var(--accent-color);*/
