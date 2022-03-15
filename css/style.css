@@ -181,7 +181,6 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 /*----BOX ------*/
 
 .box {
@@ -242,7 +241,7 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
-/* ===============Modal Window================= */
+/* ===============Modal Window не работает================= */
 .backdrop {
     position: fixed;
     top: 0;
@@ -257,18 +256,20 @@ img {
     opacity: 0;
     pointer-events: none;
 }
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.2);
+}
 .modal {
     position: absolute;
     left: 50%;
     top: 50%;
-
     width: 528px;
     height: 581px;
     padding: 8px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    background-color: var(--primary-color-white);
+    background-color: var(--primary-bg-color);
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
